@@ -1,0 +1,65 @@
+
+.gradient-background{
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.this_grid {
+	margin-top:50px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns */
+    grid-gap: 5px; /* Adjust the gap between grid items as needed */
+}
+
+
+
+/* You can specify the width and height of each grid item */
+.this_grid div {
+	
+    width: 60px; /* Adjust width as needed */
+    height: 60px; /* Adjust height as needed */
+    border: 1px solid black; /* Add borders to visually distinguish grid items */
+	border-radius:50%;
+	background-color:white;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:3rem;
+}
+
+.this_grid .x{
+	font-size:2rem;
+	border-radius:10%;
+	background-color:blueviolet;
+	width: 70px;
+}
+
+Button{
+	width: 60px; /* Adjust width as needed */
+    height: 60px; /* Adjust height as needed */
+    border: 1px solid black; /* Add borders to visually distinguish grid items */
+	border-radius:50%;
+}
+
+.foot{
+	display:flex;
+	height:25vh;
+	width:auto;
+	background-color:black;
+	color:white;
+	margin-top:10px;
+}
